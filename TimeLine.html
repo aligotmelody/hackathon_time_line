@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delivery App Hackathon Timeline</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #ecf0f1;
+      width: 120px;
+    }
+
+    .highlight {
+      background-color: #ffeeba;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2c3e50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🚀 On-Demand Delivery App Prototype Timeline (MERN Stack)</h1>
+</header>
+
+<main>
+  <div class="section">
+    <h2>✅ Core Features to Target</h2>
+    <ul>
+      <li><strong>User Roles:</strong> Customer, Driver, Admin</li>
+      <li><strong>Customer:</strong> Signup/login, place delivery order, track status</li>
+      <li><strong>Driver:</strong> Signup/login, accept orders, update delivery status</li>
+      <li><strong>Admin:</strong> View/manage all orders</li>
+      <li><strong>Extras:</strong> Google Maps integration (basic), notifications (optional)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>📅 Timeline (July 5 – July 31)</h2>
+  </div>
+
+  <!-- Week 1 -->
+  <div class="section">
+    <h3>📍 Week 1: Planning & UI/UX Design</h3>
+    <p><strong>📅 July 5 – July 11</strong></p>
+    <table>
+      <tr><td>July 5 (Fri)</td><td>Requirements gathering, feature scoping, define roles (Customer, Driver, Admin)</td></tr>
+      <tr><td>July 6–7 (Sat–Sun)</td><td>Wireframes + user flow diagrams (Figma) for 3 roles</td></tr>
+      <tr><td>July 8</td><td>Design customer pages: signup/login, place order, order history</td></tr>
+      <tr><td>July 9</td><td>Design driver pages: job list, delivery status</td></tr>
+      <tr><td>July 10</td><td>Design admin panel: order dashboard</td></tr>
+      <tr><td>July 11</td><td>Finalize UI/UX, set up GitHub repo, create folder structure (MERN)</td></tr>
+    </table>
+  </div>
+
+  <!-- Week 2 -->
+  <div class="section">
+    <h3>📍 Week 2: Frontend + Backend Setup</h3>
+    <p><strong>📅 July 12 – July 18</strong></p>
+    <table>
+      <tr><td>July 12</td><td>Setup backend (Node.js + Express + MongoDB Atlas) – user/auth/order schemas</td></tr>
+      <tr><td>July 13</td><td>Setup frontend (React.js + React Router), install dependencies</td></tr>
+      <tr><td>July 14</td><td>Implement user auth (JWT + bcrypt) on backend and connect to frontend</td></tr>
+      <tr><td>July 15</td><td>Customer: build "Place Order" page + integrate order submission API</td></tr>
+      <tr><td>July 16</td><td>Driver: build "Available Orders" & "Accept Order" + API</td></tr>
+      <tr><td>July 17</td><td>Admin: build "Order Management" table + filters</td></tr>
+      <tr><td>July 18</td><td>Test basic create/view/update order functionality from all roles</td></tr>
+    </table>
+  </div>
+
+  <!-- Week 3 -->
+  <div class="section">
+    <h3>📍 Week 3: Core Features + Map Integration + UI Polish</h3>
+    <p><strong>📅 July 19 – July 25</strong></p>
+    <table>
+      <tr><td>July 19</td><td>Implement order status flow: Pending → Accepted → Delivered</td></tr>
+      <tr><td>July 20</td><td>Integrate Google Maps API (location picker for customer; view for driver)</td></tr>
+      <tr><td>July 21</td><td>Implement driver order update endpoint and customer order tracking UI</td></tr>
+      <tr><td>July 22</td><td>Improve UI (responsive design, loading states, error messages)</td></tr>
+      <tr><td>July 23</td><td>Protect routes with role-based access (middleware for auth/roles)</td></tr>
+      <tr><td>July 24</td><td>Handle edge cases: no drivers, duplicate requests, invalid inputs</td></tr>
+      <tr><td>July 25</td><td>UI Polish: styling + animations (optional)</td></tr>
+    </table>
+  </div>
+
+  <!-- Week 4 -->
+  <div class="section">
+    <h3>📍 Week 4: Final Testing, Deployment, Pitch</h3>
+    <p><strong>📅 July 26 – July 31</strong></p>
+    <table>
+      <tr><td>July 26</td><td>Connect all components; test end-to-end flow (Customer → Driver → Admin)</td></tr>
+      <tr><td>July 27</td><td>Deploy backend to Render or Railway + frontend to Vercel/Netlify</td></tr>
+      <tr><td>July 28</td><td>Prepare demo script/slides (problem, features, architecture, challenges)</td></tr>
+      <tr><td>July 29</td><td>Create or record demo walkthrough (optional video)</td></tr>
+      <tr><td>July 30</td><td>Final testing on multiple devices + pitch dry run</td></tr>
+      <tr><td class="highlight">July 31</td><td><strong>Submission Day 🚀 — deliver prototype + pitch at hackathon</strong></td></tr>
+    </table>
+  </div>
+
+  <!-- Tech Stack -->
+  <div class="section">
+    <h2>🛠 Tech Stack Overview (MERN)</h2>
+    <table>
+      <tr><th>Layer</th><th>Tools/Tech</th></tr>
+      <tr><td>Frontend</td><td>React.js, Axios, React Router, Bootstrap/Tailwind</td></tr>
+      <tr><td>Backend</td><td>Node.js, Express.js, JWT, bcrypt</td></tr>
+      <tr><td>Database</td><td>MongoDB Atlas</td></tr>
+      <tr><td>Maps</td><td>Google Maps JavaScript API (or Leaflet.js)</td></tr>
+      <tr><td>Hosting</td><td>Vercel (frontend), Render/Railway (backend), MongoDB Atlas (DB)</td></tr>
+    </table>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2025 Hackathon Project | Created for Inspiration & Execution</p>
+</footer>
+
+</body>
+</html>
